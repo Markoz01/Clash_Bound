@@ -40,8 +40,8 @@ public class PlayerMovement : NetworkBehaviour
 
     private void Rotate()
     {
-        if(movDirection != Vector3.zero) return;
-        
+        if(movDirection == Vector3.zero) return;
+
         Quaternion targetRotation = Quaternion.LookRotation(movDirection);
         rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime));
 

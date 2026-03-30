@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 4542206768565366033}
   - component: {fileID: 292571788746635545}
   - component: {fileID: -8565997808150740586}
+  - component: {fileID: -1725903493307738753}
+  - component: {fileID: -1188799103188347202}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -202,3 +204,34 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &-1725903493307738753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552671000646282103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba985713dd250045a8f451953b56315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackKey: 101
+  attackDamage: 10
+  attackRange: 1.5
+  attackOffset: 1
+--- !u!114 &-1188799103188347202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552671000646282103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13effbb407dcdec4f9d13afc44544e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  CurrentHealth:
+    m_InternalValue: 0
