@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerHealth : NetworkBehaviour
 {
-    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] public float maxHealth = 100f;
 
     public NetworkVariable<float> CurrentHealth = new NetworkVariable<float>(
         0f,
